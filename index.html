@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <form action='/thank' method='post' name='form1'>
+        Name:<input type='text' name='name' required = "true">
+        <br>
+        Email:<input type='email' name='email'>
+        <br>
+       Type of Leave : <input list="leave_type" name= "leaves" required = "true">
+        <datalist id="leave_type">
+          <option value="PTO Leave">
+          <option value="Maternity Leave">
+          <option value="Paternity leave">
+          <option value="Study Leave">
+          <option value="">
+        </datalist>
+        <br>
+        Mobile number:<input type='number' name='mobilno' required = "true">
+        <br>
+        <input type='submit' value='submit'>
+
+        <input type='reset' value='reset'>
+    </form>
+</body>
+
+</html>
