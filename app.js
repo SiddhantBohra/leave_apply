@@ -8,7 +8,7 @@ var host = "0.0.0.0"
 var port = 8080
  
 // Running Server Details.
-var server = app.listen(host,port,  () =>{
+app.listen(host,port,  () =>{
   console.log("Example app listening at %s:%s Port", host, port)
 }).catch(err =>{
     console.log("error connecting to server",error)
