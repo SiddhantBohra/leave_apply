@@ -11,8 +11,7 @@ var host = "0.0.0.0"
 app.listen(port, host, function() {
     console.log("Server started.......");
   });
- 
- 
+   
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
