@@ -4,15 +4,13 @@ var app = express();
 var bodyParser = require('body-parser');
 var path = require('path')
 var urlencodedParser = bodyParser.urlencoded({ extended: true });
-var host = "0.0.0.0"
 var port = 8080
+var host = "0.0.0.0"
  
 // Running Server Details.
-app.listen(host,port,  () =>{
-  console.log("Example app listening at %s:%s Port", host, port)
-}).catch(err =>{
-    console.log("error connecting to server",error)
-})
+app.listen(port, host, function() {
+    console.log("Server started.......");
+  });
  
  
 app.get('/', function (req, res) {
